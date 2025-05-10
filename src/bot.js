@@ -93,7 +93,7 @@ if (links.length > 0) {
       const shortenedLinks = await shortenMultipleLinks(chatId, links);
 
       // Replace original If message has media with caption, handle it
-      bot.sendphoto(chatId, updatedCaption, {
+      bot.sendphoto(chatId, updatedphoto, {
         reply_to_photo_id: msg.photo_id,
       });
     
